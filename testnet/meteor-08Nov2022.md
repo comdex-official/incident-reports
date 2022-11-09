@@ -1,7 +1,7 @@
 # meteor-test (TEST NET) Nov 08, 2022 Chain Halt Upgrade
 
 RCA and reason for this upgrade:
-1. We took a decision of updating our nodes with the latest go version due to few recent incidents.
+1. We took a decision of updating our nodes with the latest go version(1.19.3) due to few recent incidents e.g. on persistence main net.
 2. After updating all 4 nodes with the latest go version binary post 25 blocks we started getting apphash errors on all nodes, the strange thing we noticed here was that the expected and got hash were same on all the nodes (need to investigate it).
 3. We tried to restore the nodes with foundation and Zenchainlab's snapshot and wasm directory but got apphash again while the nodes were syncing.
 4. There were no errors reported at the block, and we suspect that it was the issue with wasm data which were the root cause where other validators faced issue to sync and start the chain in past on our testnet. Using the snapshot with correct wasm directory used to work but in yesterday's case it didn't as all our nodes had the major voting power, and it was tricky to get the chain back up. 
