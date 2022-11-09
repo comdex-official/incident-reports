@@ -87,7 +87,7 @@ codmex version --long
 name: comdex
 server_name: comdex
 version: v5.0.1.beta
-commit: 
+commit: 52a58d096da3e3923a9560ea86a60832f2433ee3
 build_tags: netgo,ledger
 go: go version go1.19.3 linux/amd64
 ```
