@@ -56,7 +56,7 @@ These are all verified to be using the new genesis file and binary.
 **WARNING:** These should be added manually if you are running a sentries setup, or you will blank out your peers.
 ```sh
 SEEDS=""
-PEERS=""
+PEERS="4202b41ccc3032011969005a215e1dbe36e3ba23@65.2.136.12:26656,223d534f0fd1daeea3578346ad3e49d9cec973b6@54.166.39.27:26656,efa67d2456e8e22e9b29bd127ed3024cffc7ede1@46.166.163.37:26656,494af55997cbb1df62cff1ed4f35b58c31277f63@46.166.172.230:26656"
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/" ~/.comdex/config/config.toml
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ~/.comdex/config/config.toml
 ```
@@ -116,27 +116,21 @@ $HOME.comdex/cosmovisor
 
 ### 8. Download the new genesis
 
-To build yourself or check options, [read more here](./genesis.md).
 
 ```sh
 rm ~/.comdex/config/genesis.json
-wget 
-tar -xvf 
-mv meteor-new-genesis.json $HOME/.comdex/config/genesis.json
+wget https://snapshot.zenscape.one/comdex-testnet/genesis.json
+mv genesis.json $HOME/.comdex/config/genesis.json
 
-# check chain is meteor-test, genesis time is correct & initial block is 
-# note if using zsh that you may need to break this up, and run steps individually
-# i.e. cat $HOME/comdex/config/genesis.json | jq '.chain_id'
-cat $HOME/.comdex/config/genesis.json | jq '"Genesis Time: " + .genesis_time + " — Chain ID: " + .chain_id + " - Initial Height: " + .initial_height'
 ```
 
 ### 9. Verify genesis shasum
 
 ```sh
-jq -S -c -M '' ~/.comdex/config/genesis.json | sha256sum
+sha256sum $HOME/.comdex/genesis.json
 
 # this will return
-#   - ffffff-
+#   72d2fbe5977a10c724552c0534c38e62c06a15322c4174d4f44b912a404ea81c  genesis.json
 ```
 
 ### 10. Double check
