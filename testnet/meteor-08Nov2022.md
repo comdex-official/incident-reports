@@ -84,7 +84,7 @@ server_name: comdex
 version: v5.0.0.beta
 commit: 
 build_tags: netgo,ledger
-go: go version go1.18.3 linux/amd64
+go: go version go1.19.3 linux/amd64
 ```
 
 #### 7c. [OPTIONAL] If you use cosmovisor
