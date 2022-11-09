@@ -75,7 +75,7 @@ git clone https://github.com/comdex-official/comdex
 cd comdex
 git fetch
 git checkout v5.0.1.beta
-make build && make install
+make install
 ```
 
 To confirm the correct binary is installed, do:
