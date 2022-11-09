@@ -61,7 +61,12 @@ sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/" ~/.comdex/config/config.toml
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ~/.comdex/config/config.toml
 ```
 
-### 7. Download and install the new binary
+### 7. Download and install the new binary.
+
+Includes the change for following issue -   
+In v4.3.0 testnet upgrade a change/fix was introduced which deletes the farmer from the state if the farming value
+reaches 0 coins. This change resulted in having duplicate farmer position which were not deleted earlier before the
+upgrade and caused some issue in initalizing chain from genesis export.
 
 #### 7a. Install comdex v5.0.1.beta
 This new binary includes the fix to export the genesis,there was a bug which blocked the export.
