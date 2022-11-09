@@ -63,13 +63,13 @@ sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ~/.comde
 
 ### 7. Download and install the new binary
 
-#### 7a. Install comdex v5.0.0.beta
+#### 7a. Install comdex v5.0.1.beta
 This new binary includes the fix to export the genesis,there was a bug which blocked the export.
 ```sh
 git clone https://github.com/comdex-official/comdex
 cd comdex
 git fetch
-git checkout v5.0.0.beta
+git checkout v5.0.1.beta
 make build && make install
 ```
 
@@ -81,7 +81,7 @@ codmex version --long
 ```sh
 name: comdex
 server_name: comdex
-version: v5.0.0.beta
+version: v5.0.1.beta
 commit: 
 build_tags: netgo,ledger
 go: go version go1.19.3 linux/amd64
@@ -102,7 +102,7 @@ Check comdex has copied to the new location.
 $DAEMON_HOME/cosmovisor/genesis/bin/comdex version
 
 # returns
-v5.0.0.beta
+v5.0.1.beta
 
 tree $DAEMON_HOME/cosmovisor
 
