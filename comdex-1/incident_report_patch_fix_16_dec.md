@@ -11,6 +11,14 @@ The failure of the remaining collateral not going back to the vault owner result
 ## Mitigation:
 The five vault owners who had been liquidated and did not receive the remaining collateral will be compensated. The team will implement measures to prevent similar incidents from occurring in the future. The below table contains the wallet addresses of the vault owners along with the amount to be compensated.
 
+| Vault owner                                   | ATOM amount | Time of Incident    |
+|-----------------------------------------------|-------------|---------------------|
+| comdex1c36py3de66vmdx6ss98rxwzzpw43m3f863j6wz | 4.413023    | 16/12/2022 00:50:10 |
+| comdex1acszd5jt3ky65zlaej83lm36f6lu9tw70rmst4 | 23.398233   | 16/12/2022 02:59:44 |
+| comdex1v9w49rtdpkwxeje8xnx9pnf9z9hyr2e0tskur8 | 8.739931    | 16/12/2022 13:31:17 |
+| comdex1xynszxq7pfc7c09n6s0c7hmefn875gu26lhuwg | 1.859402    | 16/12/2022 11:07:51 |
+| comdex1nd99gv737ee8gf5hhmu5pngudh0wdl4lyhp3tj | 2.518788    | 16/12/2022 19:20:32 |
+
 
 ## Recommendations:
 The team has rectified the issue and will implement more test cases to find such bugs in initial stages to prevent such incidents occurring in the future on the Mainnet.
