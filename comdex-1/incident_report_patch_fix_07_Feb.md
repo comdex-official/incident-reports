@@ -8,7 +8,7 @@ The Stability Fee of Vaults A, B and C (ATOM & OSMO ) were supposed to be reduce
 The interest on CMST loan started accruing on all active vaults (ATOM, OSMO vaults) at a high stability fees until this issue got resolved(~20 hrs). Also, one vault got liquidated during this period while the fix was being implemented.
 
 ## Risks and Hazards:
-The high stability fees did not accrue much interest by the time the fix was implemented. (100% annual rate is equivalent to ~0.23%/day). As the issue was resolved within a day, its impact was minimized.
+The high stability fees did not accrue much interest by the time the fix was implemented. (100% annual rate is equivalent to ~0.23%/day). As the issue was resolved within a day, its impact was minimal.
 
 ## Mitigation:
 The impacted users will receive compensation for their losses based on the following list-
