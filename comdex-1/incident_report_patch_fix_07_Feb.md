@@ -11,8 +11,10 @@ The interest on CMST loan started accruing on all active vaults (ATOM, OSMO vaul
 The high stability fees did not accrue much interest by the time the fix was implemented. (100% annual rate is equivalent to ~0.23%/day). As the issue was resolved within a day, its impact was minimal.
 
 ## Mitigation:
-The impacted users will receive compensation for their losses based on the following list-
-[Click to view list](https://docs.google.com/spreadsheets/d/1ERxr6b0pmNHwJUIYcm-72zS3X4Qi37JJo7axo7SAyww/edit#gid=0)
+The impacted users have been compensated for their losses based on the following list-
+[Click to view list](https://docs.google.com/spreadsheets/d/1ERxr6b0pmNHwJUIYcm-72zS3X4Qi37JJo7axo7SAyww/edit#gid=0) 
+
+[Click to View Transaction Detail](https://www.mintscan.io/comdex/txs/9F5ABE1F73BBFA871BAF40A7FE65DE1899C0EC084EFEFE45A8FC8104D50697D5)
 
 
 ## Recommendations:
