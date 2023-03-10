@@ -1,4 +1,4 @@
-## Liquidation Compensation
+## Liquidation Compensation (during Harbor Airdrop period)
 
 ## Date: March 11, 2023
 
